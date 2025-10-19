@@ -1,6 +1,14 @@
+@font-face {
+  font-family: Sathoshi;
+  src: url(./fonts/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf);
+}
+@font-face {
+  font-family: chillix;
+  src: url(./fonts/Chillax_Complete/Chillax_Complete/Fonts/OTF/Chillax-Regular.otf);
+}
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0%;
+  margin: 0%;
   box-sizing: border-box;
 }
 
@@ -8,308 +16,228 @@ html,
 body {
   width: 100%;
   height: 100%;
-}
-
-main {
-  padding: 20px;
   background-color: #121212;
-  color: white;
-}
-main h1 {
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
-}
-main p {
-  font-family: "Montserrat", sans-serif;
-}
-main .img {
-  width: 100%;
-  height: 50%;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-main .img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-main .text {
-  width: 100%;
-  padding: 10px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-main .text .first-sub > p:first-of-type,
-main .text .second-sub > p:first-of-type {
-  margin-top: 25px;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-main .text .second-sub h1 {
-  margin-top: 30px;
-  line-height: 2rem;
-}
-main .text .button {
-  margin-top: 1rem;
-}
-main .text .three {
-  width: 100%;
-  height: 350px;
-}
-main .text .three {
-  width: 100%;
-  height: 350px;
-}
-main .two {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-main .two .box {
-  width: 40%;
-  font-weight: 500;
-  height: 150px;
-  background-color: rgba(219, 217, 217, 0);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 1.2rem;
-}
-main .five {
-  width: 100%;
-}
-main .five h1 {
-  margin-bottom: 15px;
-  font-size: 2.3rem;
-}
-main .five .cards {
-  width: 100%;
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-main .five .cards .icons {
-  display: flex;
-  width: 100%;
-  justify-content: end;
-}
-main .five .cards .icons .icon {
-  font-size: 25px;
-  margin-left: 10px;
-  padding: 10px;
-  border-radius: 50%;
-  background-color: rgba(218, 203, 203, 0.137254902);
-}
-main .five .cards .card {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: end;
-  padding: 10px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-main .five .cards .card .bottom {
-  width: 90%;
-  margin-right: 25px;
-  font-size: 1.3rem;
-  display: flex;
-  justify-content: space-between;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  padding: 16px;
-  border-radius: 5px;
-}
-main .six {
-  width: 100%;
-}
-main .six .img {
-  background-image: url("https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd34d35c31355b73d1_studio-team-p-1080.webp");
-  background-size: cover;
-  aspect-ratio: 1;
-}
-main .six .bottom {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  border-radius: 5px;
-  background-color: #1E1E1E;
-  position: relative;
-}
-main .six .bottom .first-sub p:first-child {
-  color: gray;
-  min-height: 200px;
-}
-main .six .bottom .first-sub h1 {
-  position: absolute;
-  top: 60px;
-}
-main .six .bottom .second-sub {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-main .six .bottom .second-sub i {
-  padding: 10px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1450980392);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  margin-right: 10px;
-}
-main .seven {
-  width: 100%;
-  background-color: #CEBD63;
-  padding: 30px;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-top: 10px;
-  border-radius: 5px;
-}
-main .seven .top h1 {
-  margin-top: 20px;
-  font-size: 3.8rem;
-  font-weight: 300;
-}
-main .seven .bottom {
-  width: 100%;
-}
-main .seven .bottom button {
-  width: 100%;
-  padding: 15px 15px;
-  background: #000;
-  color: white;
-  font-size: 1.1rem;
-  border-radius: 10px;
-  border: none;
-  margin-top: 30px;
-}
-main footer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-main footer .first {
-  margin-top: 10px;
-  width: 100%;
-  background-color: #1E1E1E;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 20px;
-  border-radius: 10px 10px 0 0;
-}
-main footer .first .top {
-  margin-bottom: 50px;
-  font-size: 1.4rem;
-}
-main footer .first .bottom .icons {
-  display: flex;
-  width: 100%;
-}
-main footer .first .bottom .icons .icon {
-  background-color: rgba(194, 194, 194, 0.1921568627);
-  padding: 10px;
-  font-size: 1.3rem;
-  border-radius: 50%;
-  margin-left: 5px;
-}
-main footer .first .bottom .icons .icon i {
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-}
-main footer .second {
-  width: 100%;
-}
-main footer .second .box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #1E1E1E;
-  padding: 2rem;
-}
-main footer .second .box h1 {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-main footer .second .box a {
-  display: inline-block;
-  text-decoration: none;
-  color: gray;
-  margin-top: 20px;
-}
-main footer .second .box .button {
-  width: 100%;
-}
-main footer .second .box .button button {
-  background-color: #CEBD63;
-  padding: 15px 20px;
-  margin-top: 50px;
-  margin-left: 10px;
-  border-radius: 5px;
-  border: none;
-}
-main footer .third {
-  width: 100%;
-  background-color: #1E1E1E;
-  display: flex;
-  flex-direction: column;
-  border-radius: 0 0 10px 10px;
-}
-main footer .third p {
-  text-align: center;
-  margin: 10px;
-  line-height: 1.5rem;
-  color: gray;
-  letter-spacing: 2px;
-}
-main footer .third p a {
-  color: white;
-}
-main footer .third p i {
-  padding: 8px;
-  font-size: 1.2rem;
-  background-color: rgba(255, 255, 255, 0.0941176471);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  border-radius: 50%;
-  color: white;
-  margin-left: 10px;
 }
 
 @media (min-width: 900px) {
-  main .one {
-    display: flex;
+  * {
+    box-sizing: border-box;
   }
-  main .one .text {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  body main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  body main #one {
+    display: flex;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  body main #one .top1 {
+    background-image: url(./img/first.webp);
+    background-repeat: no-repeat;
+    aspect-ratio: 1;
+    background-size: cover;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    flex: 1 1 50%;
+    border-radius: 10px;
+  }
+  body main #one .bottom1 {
+    border-radius: 10px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    flex: 1 1 50%;
+    padding: 2.5rem;
+    background-color: #1e1e1e;
   }
-  main .one .img {
-    height: 100vh;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 10px;
+  body main #one .bottom1 .sub-top {
+    font-family: Sathoshi;
+    flex: 1 1 10%;
   }
-  main .one .text:first-child {
-    position: absolute;
-    top: 10px;
-    font-size: 30px;
-    background-color: #fff;
+  body main #one .bottom1 .sub-top p {
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+    color: white;
   }
-  main .two {
-    flex-wrap: nowrap;
+  body main #one .bottom1 .sub-bottom {
+    flex: 1 1 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  body main #one .bottom1 .sub-bottom h1 {
+    color: white;
+    font-family: chillix;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 500;
+  }
+  body main #one .bottom1 .sub-bottom p {
+    font-family: Sathoshi;
+    font-size: 1.2rem;
+    color: gray;
+  }
+  body main #one .bottom1 .sub-bottom .button {
+    padding: 10px;
+    font-family: Sathoshi;
+  }
+  body main #one .bottom1 .sub-bottom .button button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: Sathoshi;
+  }
+  body main #one .bottom1 .sub-bottom .button i {
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    color: white;
+    -webkit-backdrop-filter: blur(4.8px);
+  }
+  body main #two {
+    flex: 1 1 100%;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+  }
+  body main #two p {
+    color: gray;
+    font-family: sathoshi;
+  }
+  body main #two h1 {
+    color: white;
+    font-family: chillix;
+    font-weight: 500;
+    font-size: 3rem;
+  }
+  body main #two .sub-one {
+    display: flex;
+    background-color: transparent;
+    padding: 2rem;
+    justify-content: space-around;
+    flex: 1 1 50%;
+  }
+  body main #two .sub-two {
+    color: white;
+    flex: 1 1 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+  body main #two .sub-two p {
+    color: gray;
+  }
+  body main #two .sub-two h1 {
+    color: white;
+  }
+  body main #three {
+    flex: 2;
+    display: flex;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  body main #three .top2 {
+    background-color: rgb(116, 67, 75);
+    width: 100%;
+  }
+  body main #three .bottom2 {
+    width: 100%;
+    background-color: rgb(119, 119, 70);
+  }
+  body main #four {
+    flex: 2;
+    display: flex;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  body main #four .top3 {
+    background-color: pink;
+    width: 100%;
+    min-height: 100%;
+  }
+  body main #four .bottom3 {
+    width: 100%;
+    background-color: yellow;
+  }
+  body main #five {
+    flex: 2;
+    background-color: rgba(0, 255, 179, 0.76);
+    display: flex;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  body main #five .top4 {
+    background-color: pink;
+    width: 100%;
+    min-height: 100%;
+  }
+  body main #five .bottom4 {
+    width: 100%;
+    background-color: yellow;
+  }
+  body main #six {
+    flex: 2;
+    background-color: yellow;
+    display: flex;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  body main #six .top5 {
+    background-color: pink;
+    width: 100%;
+    min-height: 100%;
+  }
+  body main #six .bottom5 {
+    width: 90%;
+    background-color: rgb(115, 255, 0);
+  }
+  body main #seven {
+    flex: 1;
+    background-color: rgb(0, 162, 255);
+    display: flex;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  body footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "one two" "one three";
+    gap: 10px;
+  }
+  body footer .one {
+    grid-area: one;
+    background-color: green;
+    border: 2px solid pink;
+  }
+  body footer .two {
+    border: 2px solid pink;
+    grid-area: two;
+    background-color: blue;
+  }
+  body footer .three {
+    border: 2px solid pink;
+    grid-area: three;
+    background-color: rgba(255, 255, 255, 0.9921568627);
   }
 }/*# sourceMappingURL=style.css.map */
