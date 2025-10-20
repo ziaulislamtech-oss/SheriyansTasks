@@ -16,7 +16,235 @@ html,
 body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  padding: 20px;
   background-color: #121212;
+}
+main #one {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+main #one .top1 {
+  background-image: url(./img/first.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1;
+  width: 100%;
+  border-radius: 10px;
+  overflow-x: hidden;
+}
+main #one .bottom1 {
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2.5rem;
+  background-color: #1e1e1e;
+}
+main #one .bottom1 .sub-top {
+  font-family: Sathoshi;
+  flex: 1 1 20%;
+}
+main #one .bottom1 .sub-top p {
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  color: white;
+  padding: 22px;
+}
+main #one .bottom1 .sub-bottom {
+  flex: 1 1 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main #one .bottom1 .sub-bottom h1 {
+  color: white;
+  font-family: chillix;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+  padding: 20px;
+}
+main #one .bottom1 .sub-bottom p {
+  font-family: Sathoshi;
+  font-size: 1.2rem;
+  color: gray;
+  padding: 20px;
+}
+main #one .bottom1 .sub-bottom .button {
+  padding: 20px;
+  font-family: Sathoshi;
+}
+main #one .bottom1 .sub-bottom .button button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-family: Sathoshi;
+}
+main #one .bottom1 .sub-bottom .button i {
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  color: white;
+  -webkit-backdrop-filter: blur(4.8px);
+}
+main #two {
+  display: flex;
+  width: 100%;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+main #two p {
+  color: gray;
+  font-family: sathoshi;
+}
+main #two h1 {
+  color: white;
+  font-family: chillix;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+main #two .sub-one {
+  display: flex;
+  background-color: transparent;
+  padding: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 1 50%;
+}
+main #two .sub-two {
+  color: white;
+  flex: 1 1 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+main #two .sub-two p {
+  color: gray;
+}
+main #two .sub-two h1 {
+  color: white;
+}
+main #three {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  gap: 15px;
+}
+main #three .top2 {
+  background-color: #1E1E1E;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  padding: 2.5rem;
+}
+main #three .top2 .sub-bottom {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  flex-direction: column;
+}
+main #three .top2 .sub-bottom h1 {
+  margin: 30px 0;
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: chillix;
+  color: white;
+  line-height: 2.5rem;
+  padding: 0%;
+}
+main #three .top2 .sub-bottom .paraghraphs {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  flex-direction: column;
+}
+main #three .top2 .sub-bottom .paraghraphs p {
+  flex: 1 1 50%;
+}
+main #three .top2 p {
+  color: gray;
+  font-size: 1.1rem;
+  letter-spacing: 1.2px;
+}
+main #three .bottom2 {
+  background-image: url(./img/second.webp);
+  aspect-ratio: 1;
+  background-size: cover;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  width: 100%;
+}
+main #four {
+  width: 100%;
+  margin: 15px 0px;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 15px;
+}
+main #four .top3 {
+  background-image: url(./img/third.webp);
+  background-size: cover;
+  aspect-ratio: 1;
+  flex: 1 1 48%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+main #four .bottom3 {
+  background-color: #1E1E1E;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  padding: 2.5rem;
+}
+main #four .bottom3 .sub-top {
+  font-size: 1.2rem;
+  color: gray;
+  text-transform: uppercase;
+}
+main #four .bottom3 .sub-bottom {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  flex-direction: column;
+}
+main #four .bottom3 .sub-bottom h1 {
+  margin: 30px 0px;
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: chillix;
+  color: white;
+  line-height: 3rem;
+  padding: 0%;
+}
+main #four .bottom3 .sub-bottom .paraghraphs {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  flex-direction: column;
+}
+main #four .bottom3 .sub-bottom .paraghraphs p {
+  flex: 1 1 50%;
+  color: gray;
+  font-size: 1.1rem;
 }
 
 @media (min-width: 900px) {
@@ -28,13 +256,9 @@ body {
     flex-direction: column;
     min-height: 100vh;
   }
-  body main {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
   body main #one {
     display: flex;
+    flex-wrap: nowrap;
     -moz-column-gap: 15px;
          column-gap: 15px;
   }
@@ -43,7 +267,6 @@ body {
     background-repeat: no-repeat;
     aspect-ratio: 1;
     background-size: cover;
-    width: 100%;
     min-height: 100%;
     overflow-x: hidden;
     flex: 1 1 50%;
@@ -109,6 +332,7 @@ body {
   }
   body main #two {
     flex: 1 1 100%;
+    flex-wrap: nowrap;
     display: flex;
     width: 100%;
     height: 200px;
@@ -151,8 +375,9 @@ body {
   }
   body main #three {
     margin: 15px;
-    flex: 2;
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
     gap: 15px;
   }
   body main #three .top2 {
@@ -181,6 +406,7 @@ body {
   }
   body main #three .top2 .sub-bottom .paraghraphs {
     display: flex;
+    flex-direction: row;
     -moz-column-gap: 20px;
          column-gap: 20px;
   }
@@ -250,6 +476,7 @@ body {
     display: flex;
     -moz-column-gap: 20px;
          column-gap: 20px;
+    flex-direction: row;
   }
   body main #four .bottom3 .sub-bottom .paraghraphs p {
     flex: 1 1 50%;
@@ -257,43 +484,233 @@ body {
     font-size: 1.2rem;
   }
   body main #five {
-    flex: 2;
-    background-color: rgba(0, 255, 179, 0.76);
+    padding: 10px;
     display: flex;
+    flex-direction: column;
     -moz-column-gap: 10px;
          column-gap: 10px;
   }
   body main #five .top4 {
-    background-color: pink;
-    width: 100%;
-    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+  }
+  body main #five .top4 h1 {
+    font-size: 3rem;
+    font-family: chillix;
+    color: white;
+  }
+  body main #five .top4 .right {
+    display: flex;
+    gap: 15px;
+  }
+  body main #five .top4 .right button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: sathosi;
+    font-size: 1rem;
+  }
+  body main #five .top4 .right i {
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    color: white;
+    -webkit-backdrop-filter: blur(4.8px);
   }
   body main #five .bottom4 {
     width: 100%;
-    background-color: yellow;
+    display: flex;
+    gap: 10px;
+  }
+  body main #five .bottom4 .box {
+    background-image: url(./img/boxOneImg.webp);
+    aspect-ratio: 1;
+    background-size: cover;
+    border-radius: 10px;
+    flex: 1 1 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  body main #five .bottom4 .box .icons {
+    display: flex;
+    justify-content: end;
+  }
+  body main #five .bottom4 .box .icons i {
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    background: rgba(235, 235, 235, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    color: white;
+    -webkit-backdrop-filter: blur(4.8px);
+  }
+  body main #five .bottom4 .box .bottomText {
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    background: rgba(95, 95, 95, 0.171);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border: 1px solid rgba(223, 221, 221, 0.38);
+    color: white;
+  }
+  body main #five .bottom4 .box .bottomText h3 {
+    font-family: chillix;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+  body main #five .bottom4 .box .bottomText p {
+    font-family: sathoshi;
+    letter-spacing: 0.2rem;
+    flex: 1 1 50%;
+    text-align: end;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  body main #five .bottom4 #box2 {
+    border-radius: 10px;
+    background-image: url(./img/boxTwoImg.webp);
+    aspect-ratio: 1;
+    background-size: cover;
+    flex: 1 1 33%;
+  }
+  body main #five .bottom4 #box3 {
+    border-radius: 10px;
+    background-image: url(./img/boxThreeImg.webp);
+    aspect-ratio: 1;
+    background-size: cover;
+    flex: 1 1 33%;
   }
   body main #six {
-    flex: 2;
-    background-color: yellow;
     display: flex;
-    -moz-column-gap: 10px;
-         column-gap: 10px;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
   }
   body main #six .top5 {
-    background-color: pink;
+    background-image: url(./img/seventh.webp);
+    background-size: cover;
+    aspect-ratio: 1;
     width: 100%;
     min-height: 100%;
+    flex: 1 1 50%;
+    border-radius: 10px;
+    overflow: hidden;
   }
   body main #six .bottom5 {
+    border-radius: 10px;
+    flex: 1 1 50%;
     width: 90%;
-    background-color: rgb(115, 255, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    padding: 30px;
+  }
+  body main #six .bottom5 .subTop {
+    margin-top: 40px;
+  }
+  body main #six .bottom5 .subTop h1 {
+    margin-top: 10px;
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-family: chillix;
+    color: white;
+    line-height: 3.5rem;
+  }
+  body main #six .bottom5 .subTop p {
+    color: gray;
+    font-size: 1.2rem;
+    font-family: sathoshi;
+    text-transform: uppercase;
+  }
+  body main #six .bottom5 .subBottom .button button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    font-family: sathoshi;
+  }
+  body main #six .bottom5 .subBottom .button i {
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    background: rgba(235, 235, 235, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    color: white;
+    -webkit-backdrop-filter: blur(4.8px);
   }
   body main #seven {
-    flex: 1;
-    background-color: rgb(0, 162, 255);
+    background-color: #CEBD63;
     display: flex;
-    -moz-column-gap: 10px;
-         column-gap: 10px;
+    padding: 30px;
+    margin: 20px 0px;
+    border-radius: 10px;
+  }
+  body main #seven .left2 {
+    flex: 1 1 90%;
+  }
+  body main #seven .left2 p {
+    text-transform: uppercase;
+    color: black;
+    font-family: sathoshi;
+    font-size: 1.2rem;
+  }
+  body main #seven .left2 h1 {
+    font-size: 4.2rem;
+    font-family: chillix;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  body main #seven .right2 {
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: end;
+    align-items: end;
+  }
+  body main #seven .right2 .button {
+    background-color: #161616;
+    padding: 15px 30px;
+    border-radius: 5px;
+  }
+  body main #seven .right2 .button button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    font-family: sathoshi;
+  }
+  body main #seven .right2 .button i {
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    background: rgba(235, 235, 235, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    color: white;
+    -webkit-backdrop-filter: blur(4.8px);
   }
   body footer {
     display: grid;
