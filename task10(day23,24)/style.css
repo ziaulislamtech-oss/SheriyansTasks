@@ -719,17 +719,63 @@ main #four .bottom3 .sub-bottom .paraghraphs p {
     grid-template-areas: "one two" "one three";
     gap: 10px;
   }
-  body footer .one {
+  body footer .one2 {
     grid-area: one;
     background-color: green;
     border: 2px solid pink;
   }
-  body footer .two {
-    border: 2px solid pink;
+  body footer .two2 {
+    padding: 1rem 0px 3rem 3rem;
     grid-area: two;
-    background-color: blue;
+    background-color: #1E1E1E;
+    display: flex;
+    border-radius: 10px;
   }
-  body footer .three {
+  body footer .two2 .pages {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+  }
+  body footer .two2 .pages button {
+    padding: 15px 35px;
+    background-color: #CEBD63;
+    border: none;
+    border-radius: 5px;
+  }
+  body footer .two2 .cms {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  body footer .two2 .utilityPages {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  body footer .two2 .pages, body footer .two2 .cms, body footer .two2 .utilityPages > * {
+    margin: 20px 0;
+    text-transform: uppercase;
+  }
+  body footer .two2 .pages h1,
+  body footer .two2 .cms h1,
+  body footer .two2 .utilityPages h1 {
+    font-family: chillix;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+  }
+  body footer .two2 .pages a,
+  body footer .two2 .cms a,
+  body footer .two2 .utilityPages a {
+    color: gray;
+    text-decoration: none;
+    font-family: sathoshi;
+  }
+  body footer .three2 {
     border: 2px solid pink;
     grid-area: three;
     background-color: rgba(255, 255, 255, 0.9921568627);

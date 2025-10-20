@@ -859,19 +859,75 @@ main {
         "one three";
       gap: 10px;
 
-      .one {
+      .one2 {
         grid-area: one;
         background-color: green;
         border: 2px solid pink;
       }
 
-      .two {
-        border: 2px solid pink;
+      .two2 {
+        padding: 1rem 0px 3rem 3rem;
+        // border: 2px solid pink;
         grid-area: two;
-        background-color: blue;
+        background-color: #1E1E1E;
+        display: flex;
+        border-radius: 10px;
+        .pages{
+          flex: 1 1 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: start;
+          button{
+            // width: fit-content;
+            padding: 15px 35px;
+            background-color: #CEBD63;
+            border: none;
+            border-radius: 5px;
+          }
+          
+        }
+       
+        .cms{
+          flex: 1 1 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          // align-items: center;
+          
+        }
+        .utilityPages{
+          flex: 1 1 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          // align-items: center;
+
+        }
+        
+        .pages,.cms,.utilityPages > *{
+          margin: 20px 0;
+          text-transform: uppercase;
+        }
+         .pages h1,
+          .cms h1, 
+          .utilityPages h1 {
+          font-family: chillix;
+          font-size: 1.2rem;
+          font-weight: 500;
+          color: white;
+         }
+         .pages a,
+         .cms a,
+         .utilityPages a{
+          color: gray;
+          text-decoration: none;
+          font-family: sathoshi;
+         }
+        
       }
 
-      .three {
+      .three2 {
         border: 2px solid pink;
         grid-area: three;
         background-color: #fffffffd;
