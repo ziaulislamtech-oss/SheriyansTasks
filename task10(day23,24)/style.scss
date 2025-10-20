@@ -6,6 +6,9 @@
   font-family: chillix;
   src: url(./fonts/Chillax_Complete/Chillax_Complete/Fonts/OTF/Chillax-Regular.otf);
 }
+
+
+
 * {
   padding: 0%;
   margin: 0%;
@@ -34,7 +37,7 @@ body {
 
       #one {
         display: flex;
-        column-gap: 10px;
+        column-gap: 15px;
         .top1 {
             background-image: url(./img/first.webp);
             background-repeat: no-repeat;
@@ -97,14 +100,12 @@ body {
                 padding: 10px;
                 border-radius: 50%;
                 font-size: 1.2rem;
-                /* From https://css.glass */
                 background: rgba(255, 255, 255, 0.04);
                 border-radius: 16px;
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
                 backdrop-filter: blur(4.8px);
                 color: white;
                 -webkit-backdrop-filter: blur(4.8px);
-                // border: 1px solid rgba(255, 255, 255, 0.15);
               }
             }
           }
@@ -144,7 +145,6 @@ body {
             color: white;
           flex: 1 1 50%;
           background-color: transparent;
-          // width: 50%;
           display: flex;
           justify-content: space-around;
           padding: 2rem;
@@ -159,32 +159,114 @@ body {
         }
       }
       #three {
+          margin: 15px;
         flex: 2;
-        // background-color: rgb(255, 115, 0);
         display: flex;
-        column-gap: 10px;
+        gap: 15px;
         .top2 {
-          background-color: rgb(116, 67, 75);
-          width: 100%;
+          background-color: #1E1E1E;
+           border-radius: 10px;
+            // width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 50%;
+            padding: 2.5rem;
+            .sub-bottom{
+              flex: 1 1 auto;
+              display: flex;
+              justify-content: end;
+              align-items: start;
+              flex-direction: column;
+              h1{
+                margin-bottom: 30px;
+                font-size: 3rem;
+                font-weight: 500;
+                font-family: chillix;
+                color: white;
+                line-height: 3.5rem;
+                padding: 0%;
+              }
+              .paraghraphs{
+                display: flex;
+                column-gap: 20px;
+                p{
+                  flex: 1 1 50%;
+                }
+              }
+            }
+          p{
+            color: gray;
+             font-size: 1.2rem;
+                  letter-spacing: 1.2px;
+                  // color: white;
+          }
         }
         .bottom2 {
-          width: 100%;
-          background-color: rgb(119, 119, 70);
+          background-image: url(./img/second.webp);
+          aspect-ratio: 1;
+          background-size: cover;
+          aspect-ratio: 1;
+          flex: 1 1 50%;
+          border-radius: 10px;
+          overflow: hidden;
         }
       }
       #four {
+        width: 100%;
+        margin: 15px;
         flex: 2;
-        // background-color: rgb(81, 255, 0);
+        
         display: flex;
-        column-gap: 10px;
+        column-gap: 15px;
         .top3 {
-          background-color: pink;
-          width: 100%;
-          min-height: 100%;
+          // width: 100%;
+          // min-height: 100%;
+          background-image: url(./img/third.webp);
+          background-size: cover;
+          aspect-ratio: 1;
+          flex: 1 1 48%;
+          border-radius: 10px;
+          overflow: hidden;
         }
         .bottom3 {
-          width: 100%;
-          background-color: yellow;
+          background-color: #1E1E1E;
+          // background-color: #fff;
+           border-radius: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 50%;
+            padding: 2.5rem;
+          .sub-top{
+            font-size: 1.2rem;
+            color: gray;
+          }
+          .sub-bottom{
+             flex: 1 1 80%;
+              display: flex;
+              justify-content: end;
+              align-items: start;
+              flex-direction: column;
+            h1{
+               margin-bottom: 30px;
+                font-size: 3rem;
+                font-weight: 500;
+                font-family: chillix;
+                color: white;
+                line-height: 3.5rem;
+                padding: 0%;
+            }
+             .paraghraphs{
+                display: flex;
+                column-gap: 20px;
+                p{
+                  flex: 1 1 50%;
+                  color: gray;
+                  font-size: 1.2rem;
+                }
+              }
+             
+          }
         }
       }
       #five {
