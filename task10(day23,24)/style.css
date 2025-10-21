@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+i:hover {
+  cursor: pointer;
+}
+
 html,
 body {
   width: 100%;
@@ -55,6 +59,7 @@ main #one .bottom1 .sub-top p {
   letter-spacing: 1.2px;
   color: white;
   padding: 22px;
+  text-transform: uppercase;
 }
 main #one .bottom1 .sub-bottom {
   flex: 1 1 80%;
@@ -110,6 +115,7 @@ main #two {
 main #two p {
   color: gray;
   font-family: sathoshi;
+  text-transform: uppercase;
 }
 main #two h1 {
   color: white;
@@ -152,6 +158,11 @@ main #three .top2 {
   flex-direction: column;
   flex: 1 1 50%;
   padding: 2.5rem;
+}
+main #three .top2 .sub-top p {
+  text-transform: uppercase;
+  font-family: sathoshi;
+  font-size: 1rem;
 }
 main #three .top2 .sub-bottom {
   flex: 1 1 auto;
@@ -245,6 +256,383 @@ main #four .bottom3 .sub-bottom .paraghraphs p {
   flex: 1 1 50%;
   color: gray;
   font-size: 1.1rem;
+}
+main #five {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+main #five .top4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+}
+main #five .top4 h1 {
+  font-size: 2rem;
+  font-family: chillix;
+  color: white;
+}
+main #five .top4 .right {
+  display: flex;
+  gap: 15px;
+}
+main #five .top4 .right button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-family: sathosi;
+  font-size: 1rem;
+}
+main #five .top4 .right i {
+  padding: 10px;
+  margin-left: 15px;
+  border-radius: 50%;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  color: white;
+  -webkit-backdrop-filter: blur(4.8px);
+}
+main #five .bottom4 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+main #five .bottom4 .box {
+  background-image: url(./img/boxOneImg.webp);
+  aspect-ratio: 1;
+  background-size: cover;
+  border-radius: 10px;
+  flex: 1 1 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+main #five .bottom4 .box .icons {
+  display: flex;
+  justify-content: end;
+}
+main #five .bottom4 .box .icons i {
+  padding: 10px;
+  margin-left: 6px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  background: rgba(235, 235, 235, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  color: white;
+  -webkit-backdrop-filter: blur(4.8px);
+}
+main #five .bottom4 .box .bottomText {
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  background: rgba(95, 95, 95, 0.171);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.3px);
+  -webkit-backdrop-filter: blur(5.3px);
+  border: 1px solid rgba(223, 221, 221, 0.38);
+  color: white;
+}
+main #five .bottom4 .box .bottomText h3 {
+  font-family: chillix;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+main #five .bottom4 .box .bottomText p {
+  font-family: sathoshi;
+  letter-spacing: 0.1rem;
+  flex: 1 1 50%;
+  text-align: end;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+main #five .bottom4 #box2 {
+  border-radius: 10px;
+  background-image: url(./img/boxTwoImg.webp);
+  aspect-ratio: 1;
+  background-size: cover;
+  flex: 1 1 33%;
+}
+main #five .bottom4 #box3 {
+  border-radius: 10px;
+  background-image: url(./img/boxThreeImg.webp);
+  aspect-ratio: 1;
+  background-size: cover;
+  flex: 1 1 33%;
+}
+main #six {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+main #six .top5 {
+  background-image: url(./img/seventh.webp);
+  background-size: cover;
+  aspect-ratio: 1;
+  width: 100%;
+  min-height: 100%;
+  flex: 1 1 50%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+main #six .bottom5 {
+  border-radius: 10px;
+  flex: 1 1 50%;
+  width: 90%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #1E1E1E;
+  padding: 30px;
+}
+main #six .bottom5 .subTop {
+  margin-top: 40px;
+}
+main #six .bottom5 .subTop h1 {
+  margin: 30px 0px;
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: chillix;
+  color: white;
+  line-height: 2.5rem;
+}
+main #six .bottom5 .subTop p {
+  color: gray;
+  font-size: 1.2rem;
+  font-family: sathoshi;
+  text-transform: uppercase;
+}
+main #six .bottom5 .subBottom .button button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  font-family: sathoshi;
+  margin: 20px 0px;
+}
+main #six .bottom5 .subBottom .button i {
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1rem;
+  background: rgba(235, 235, 235, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  color: white;
+  -webkit-backdrop-filter: blur(4.8px);
+}
+main #seven {
+  background-color: #CEBD63;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin: 20px 0px;
+  border-radius: 10px;
+}
+main #seven .left2 {
+  flex: 1 1 70%;
+}
+main #seven .left2 p {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.651);
+  font-family: sathoshi;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+main #seven .left2 h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+  font-family: chillix;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+}
+main #seven .right2 {
+  display: flex;
+  flex: 1 1 50%;
+  width: 100%;
+  justify-content: start;
+}
+main #seven .right2 .button {
+  background-color: #121212;
+  padding: 6px 15px;
+  border-radius: 5px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+main #seven .right2 .button button {
+  border: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  font-family: sathoshi;
+  letter-spacing: 2px;
+}
+main #seven .right2 .button i {
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1rem;
+  background: rgba(235, 235, 235, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  color: white;
+  -webkit-backdrop-filter: blur(4.8px);
+}
+
+footer {
+  background-color: #121212;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 2fr 0.1fr;
+  grid-template-areas: "one" "two" "three";
+  gap: 10px;
+}
+footer .one2 {
+  align-items: start;
+  background-color: #1E1E1E;
+  grid-area: one;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 30px;
+}
+footer .one2 .top h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+}
+footer .one2 .bottom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+footer .one2 .bottom i {
+  padding: 10px;
+  margin-left: 15px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  background: rgba(235, 235, 235, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  color: white;
+  -webkit-backdrop-filter: blur(4.8px);
+}
+footer .two2 {
+  padding: 1rem 0px 3rem 3rem;
+  grid-area: two;
+  background-color: #1E1E1E;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-area: "one two" "three empty";
+  border-radius: 10px;
+}
+footer .two2 .pages {
+  flex: 1 1 50%;
+  display: flex;
+  grid-area: one;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+footer .two2 .pages button {
+  padding: 15px 35px;
+  background-color: #CEBD63;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+footer .two2 .cms {
+  flex: 1 1 50%;
+  grid-area: two;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer .two2 .utilityPages {
+  grid-area: three;
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer .two2 .pages,
+footer .two2 .cms,
+footer .two2 .utilityPages > * {
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+footer .two2 .pages h1,
+footer .two2 .cms h1,
+footer .two2 .utilityPages h1 {
+  font-family: chillix;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+}
+footer .two2 .pages a,
+footer .two2 .cms a,
+footer .two2 .utilityPages a {
+  color: gray;
+  text-decoration: none;
+  font-family: sathoshi;
+}
+footer .three2 {
+  grid-area: three;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #161616;
+  padding: 30px;
+  border-radius: 10px;
+}
+footer .three2 .right p {
+  font-family: sathoshi;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: gray;
+}
+footer .three2 .right p a {
+  color: white;
+}
+footer .three2 .button button {
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  font-family: sathoshi;
+}
+footer .three2 .button i {
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  background: rgba(235, 235, 235, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  color: white;
+  -webkit-backdrop-filter: blur(4.8px);
 }
 
 @media (min-width: 900px) {
@@ -826,6 +1214,7 @@ main #four .bottom3 .sub-bottom .paraghraphs p {
     color: white;
   }
   body footer .three2 .button button {
+    text-transform: uppercase;
     border: none;
     background-color: transparent;
     color: white;
