@@ -928,6 +928,7 @@ footer .three2 .button i {
   body main #five .bottom4 {
     width: 100%;
     display: flex;
+    flex-wrap: nowrap;
     gap: 10px;
   }
   body main #five .bottom4 .box {
@@ -1002,6 +1003,7 @@ footer .three2 .button i {
   }
   body main #six {
     display: flex;
+    flex-wrap: nowrap;
     -moz-column-gap: 15px;
          column-gap: 15px;
   }
@@ -1080,20 +1082,21 @@ footer .three2 .button i {
   }
   body main #seven .left2 h1 {
     font-size: 4.2rem;
+    line-height: 4rem;
     font-family: chillix;
     font-weight: 400;
     text-transform: uppercase;
   }
   body main #seven .right2 {
     display: flex;
-    flex: 1 1 50%;
+    flex: 1 1 20%;
     justify-content: end;
     align-items: end;
   }
   body main #seven .right2 .button {
     background-color: #161616;
-    padding: 15px 30px;
     border-radius: 5px;
+    width: 30%;
   }
   body main #seven .right2 .button button {
     border: none;
@@ -1119,7 +1122,6 @@ footer .three2 .button i {
     grid-template-columns: 0.7fr 2fr;
     grid-template-rows: 2fr 0.5fr;
     grid-template-areas: "one two" "one three";
-    gap: 10px;
   }
   body footer .one2 {
     align-items: start;
@@ -1129,7 +1131,6 @@ footer .three2 .button i {
     justify-content: space-between;
     flex-direction: column;
     border-radius: 10px;
-    padding: 30px;
   }
   body footer .one2 .top h1 {
     text-transform: uppercase;
@@ -1160,6 +1161,7 @@ footer .three2 .button i {
     background-color: #1E1E1E;
     display: flex;
     border-radius: 10px;
+    margin: 20px 0px;
   }
   body footer .two2 .pages {
     flex: 1 1 50%;
