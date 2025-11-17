@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSL Winner</title>
+    <style>
+        .parent{
+            width: 400px;
+            height: 300px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-direction: column;
+        }
+        button{
+            padding: 15px 25px;
+            background-color: blueviolet;
+            color: white;
+            border:  none;
+            border-radius:10px;
+        }
+        img{
+            object-fit: cover;
+            max-height: 100px;
+            border-radius: 40%;
+        }
+    </style>
+</head>
+<body>
+    <h1>PSL Winner Guessing Game</h1>
+    <div class="parent">
+        <div class="child">
+            <h1 id="winnerTeam"></h1>
+            <h2 id="captin"></h2>
+            <img width="100px"  id="captinImg" src="" alt="">
+            <h2 id="tropies"></h2>
+        </div>
+    </div>
+    <button id="guessBtn">Guess Team</button>
+    <script src="script.js"></script>
+</body>
+</html>
