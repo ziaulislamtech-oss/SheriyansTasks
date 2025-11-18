@@ -52,8 +52,6 @@ let body = document.querySelector('body')
 let captinImg = document.querySelector("#captinImg");
 button.addEventListener('click',()=>{
     let num = Math.floor(Math.random()*arr.length)
-    console.log(arr[num])
-    console.log("button Clicked")
     h1.textContent = arr[num].team
     h2Captin.textContent =  `Captin : ${arr[num].Captin}`;
     h2Tropies.textContent = `Tropies Owned : ${arr[num].tropies}`
