@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            color: white;
+            font-family: monospace;
+        }
+
+        .parent{
+            margin: 50px auto;
+            width: 450px;
+            height: 200px;
+            /* background-color:#0A142F; */
+            background-color: #8A77F0;
+            padding: 20px;
+            box-shadow: 10px 10px 20px 5px;
+            border-radius: 5px;
+            
+        }
+        .parent .top{
+            width: 100%;
+            height: 50%;
+        }
+        .parent .top .inner{
+            border-radius: 10px ;
+            border: none;
+            width: 100%;
+            height: 20px;
+            background-color: #fff;
+            margin-top: 10px;
+        }
+        .parent .top .inner .downloader{
+            width: 0%;
+            height: 100%;
+            background-color: #005CFF;
+            border-radius: 10px;
+            background-color: #003CFF;
+        }
+        .parent .bottom{
+            display: flex;
+            justify-content: space-between;
+        }
+        button{
+            padding: 10px 15px;
+            transition: all ease .9s;
+            background-color: #003CFF;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+        button:active{
+            scale: .5;
+            
+        }
+        button:hover{
+            background-color: #3964f5;
+            cursor: pointer;
+        }
+        .parent .bottom p{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="parent">
+            <div class="top">
+                <p style="font-size: 1.1rem;  font-family: monospace;">Click on the button to download</p>
+                <div class="inner">
+                    <div class="downloader"></div>
+                    <!-- <p style="font-size: 1rem; text-align: center;" id="complitionMsg"></p> -->
+                </div>
+            </div>
+            <div class="bottom">
+                <p id="grow"></p>
+                
+                <button id="btn">Downloade</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
