@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+        body{
+            background-color: black;
+        }
+        
+        .parent{
+            width: 300px;
+            height: 400px;
+            background-color: rgb(255, 255, 255);
+            margin: 100px auto;
+            padding: 20px;
+            /* position: relative; */
+            border-radius: 8px;
+        }
+
+        .parent .card{
+            width: 100%;
+            height: 80%;
+            background-color: #fff;
+            overflow-y: hidden;
+            position: relative;
+        }
+        .parent .card img{
+            width: 100%;
+            height: 120%;
+            object-fit:cover;
+            top: 10px;
+        }
+        .parent .card i{
+            background-image: url(https://t3.ftcdn.net/jpg/01/14/77/58/360_F_114775804_4yfG9qbKp1NlF1RLo4MUlGIVj9MWhnnc.jpg);
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+          font-size: 4rem;
+           position: absolute;
+           opacity: 0;
+           top: 50%;
+           left: 50%;
+           transform:  translate(-50%,-50%)  scale(.1) rotate(-90deg) ;
+           transition: all cubic-bezier(.61,1.39,.84,1.39) .4s;
+           
+        }
+        .parent .text{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    </style>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <main>
+        <div class="parent">
+
+            <div class="card">
+                <img src="https://plus.unsplash.com/premium_photo-1664536392779-049ba8fde933?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              <i class="ri-heart-fill"></i>
+            </div>
+
+            <div class="text">
+                <h2>Ahmad Khan</h2>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
