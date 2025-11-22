@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        main{
+            width: 100%;
+            background-color: black;
+        }
+        .animal{
+            border: 2px solid red;
+            height: 140px;
+            display: flex;
+            justify-content: start;
+            align-items:center  ;
+            position: relative;
+            object-position: center;
+        }
+        .animal img{
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            opacity: 0;
+            mix-blend-mode: difference;
+            transition: all linear .2s;
+            position: absolute;
+            /* position: absolute; */
+        }
+        h1{
+            font-size: 2.5rem;
+            z-index:999;
+            mix-blend-mode: difference;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="animal">
+            <h1>Lion</h1>
+            <img src="https://images.unsplash.com/photo-1618641662184-bafefb91a542?q=80&w=465&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="animal">
+            <h1>Zeebra</h1>
+            <img src="https://images.unsplash.com/photo-1501706362039-c06b2d715385?q=80&w=620&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="animal">
+            <h1>Giraffe</h1>
+            <img src="https://images.unsplash.com/photo-1604336755604-96ee6fa9f3f1?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="animal">
+            <h1>Fox</h1>
+            <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+      
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
