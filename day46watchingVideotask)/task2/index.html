@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta like feature</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+        main{
+            width: 100%;
+            height: 100%;
+            background-color: cornflowerblue;
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+        }
+        .parent{
+            width: 300px;
+            height: 400px;
+            background-color: #fff;
+            position: relative;
+        }
+        .parent img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .parent i{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* scale:3; */
+            font-size: 3rem;
+            transform: translate(-50%,-50%) scale(.1) rotate(-90deg);
+            transition: all cubic-bezier(.28,.64,.59,1.65) .3s;
+            background: linear-gradient(to right bottom ,#833ab4, #fd1d1d, #fcb045);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            opacity: 0;
+        }
+        
+    </style>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <main>
+        <div class="parent">
+           <i class="ri-heart-3-fill"></i>
+            <img src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>
