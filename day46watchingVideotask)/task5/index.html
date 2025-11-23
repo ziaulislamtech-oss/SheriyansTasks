@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories Features</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        main{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: cyan;
+        }
+        .parent{
+            width: 300px;
+            height: 400px;
+            background-color: white;
+            position: relative;
+        }
+        .parent #top{
+            height: 120px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 5px;
+           
+            /* white-space: nowrap; */
+            overflow-x: scroll;
+        }
+        .parent #top::-webkit-scrollbar{
+            display: none;
+        }
+        .parent #top .story{
+
+            flex-shrink: 0;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #fff;
+            display: inline-block;
+            overflow: hidden;
+            
+        }
+        .parent #top .story img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .parent .fullScreen{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            display: none;
+            background-size: cover;
+            background-position: center;
+            /* visibility: hidden; */
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="parent">
+            <div class="fullScreen"></div>
+            <div id="top">
+                
+               
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
