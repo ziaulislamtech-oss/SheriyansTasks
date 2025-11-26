@@ -5,48 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piano</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
 </head>
 <body>
     <main>
+        <img id="cursor" src="./index-finger-pressing-something.png" alt="">
+        <audio src="./audio/24.mp3"></audio>
         <div class="piano">
             <div class="whiteKeys">
                 <div class="blackKeys">
-                    <div class="hey black-key">2</div>
-                    <div class="hey black-key">3</div>
-                    <div class="black-key">5</div>
-                    <div class="black-key">6</div>
-                    <div class="black-key">7</div>
-                    <div class="black-key">8</div>
-                    <div class="black-key">9</div>
-                    <div class="black-key">0</div>
-                    <div class="black-key">S</div>
-                    <div class="black-key">D</div>
-                    <div class="black-key">F</div>
-                    <div class="black-key">H</div>
-                    <div class="black-key">J</div>
-                    <div class="heylast black-key">L</div>
-                    <div class="heylast black-key">;</div>
+                    <div data-sound="24" data-key="1" class="hey black-key">1</div>
+                    <div data-sound="29" data-key="2" class="hey black-key">2</div>
+                    <div data-sound="36" data-key="3" class="black-key">3</div>
+                    <div data-sound="41" data-key="4" class="black-key">4</div>
+                    <div data-sound="48" data-key="5" class="black-key">5</div>
+                    <div data-sound="53" data-key="6" class="black-key">6</div>
+                    <div data-sound="60" data-key="7" class="black-key">7</div>
+                    <div data-sound="64" data-key="8" class="black-key">8</div>
+                    <div data-sound="65" data-key="9" class="black-key">9</div>
+                    <div data-sound="69" data-key="0" class="black-key">0</div>
+                    <div data-sound="72" data-key="V" class="black-key">V</div>
+                    <div data-sound="72" data-key="W" class="black-key">W</div>
+                    <div data-sound="77" data-key="X" class="black-key">X</div>
+                    <div data-sound="79" data-key="M" class="heylast black-key">M</div>
+                    <div data-sound="84" data-key="Z" class="heylast black-key">Z</div>
                 </div>
-                <div class="white-key">Q</div>
-                <div class="white-key">W</div>
-                <div class="white-key">E</div>
-                <div class="white-key">R</div>
-                <div class="white-key">T</div>
-                <div class="white-key">Y</div>
-                <div class="white-key">U</div>
-                <div class="white-key">I</div>
-                <div class="white-key">O</div>
-                <div class="white-key">P</div>
-                <div class="white-key">Z</div>
-                <div class="white-key">X</div>
-                <div class="white-key">C</div>
-                <div class="white-key">V</div>
-                <div class="white-key">B</div>
-                <div class="white-key">N</div>
-                <div class="white-key">M</div>
-                <div class="white-key">,</div>
-                <div class="white-key">.</div>
-                <div class="white-key">/</div>
+                <div data-sound="29" data-key="W" class="white-key">W</div>
+                <div data-sound="24" data-key="Q" class="white-key">Q</div>
+                <div data-sound="36" data-key="E" class="white-key">E</div>
+                <div data-sound="41" data-key="R" class="white-key">R</div>
+                <div data-sound="48" data-key="T" class="white-key">T</div>
+                <div data-sound="53" data-key="Y" class="white-key">Y</div>
+                <div data-sound="60" data-key="U" class="white-key">U</div>
+                <div data-sound="64" data-key="I" class="white-key">I</div>
+                <div data-sound="65" data-key="O" class="white-key">O</div>
+                <div data-sound="69" data-key="P" class="white-key">P</div>
+                <div data-sound="72" data-key="A" class="white-key">A</div>
+                <div data-sound="77" data-key="S" class="white-key">S</div>
+                <div data-sound="79" data-key="D" class="white-key">D</div>
+                <div data-sound="84" data-key="F" class="white-key">F</div>
+                <div data-sound="96" data-key="G" class="white-key">G</div>
+                <div data-sound="24" data-key="H" class="white-key">H</div>
+                <div data-sound="29" data-key="J" class="white-key">J</div>
+                <div data-sound="36" data-key="K" class="white-key">K</div>
+                <div data-sound="41" data-key="L" class="white-key">L</div>
+                <div data-sound="48" data-key="C" class="white-key">C</div>
                 <!-- <div class="key"></div> -->
             </div>
         </div>
