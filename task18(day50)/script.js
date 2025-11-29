@@ -96,7 +96,7 @@ const reels = [
     isLiked: false,
     commentCount: 199,
     caption: "Captured this moment 📸😍",
-    video: "./reels/8.mp4",
+    video: "https://www.pexels.com/download/video/3206742/",
     shareCount: 70,
     isFollowed: true,
     userProfile: {
@@ -109,7 +109,7 @@ const reels = [
     isLiked: true,
     commentCount: 145,
     caption: "New melody dropping soon 🎵🔥",
-    video: "./reels/9.mp4",
+    video: "https://www.pexels.com/download/video/10125140/",
     shareCount: 41,
     isFollowed: false,
     userProfile: {
