@@ -78,15 +78,16 @@ main{
 .reel .bottom{
     width: 100%;
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     padding: 0 10px;
+    min-height: 15%;
 }
 .reel .bottom .top{
     width: 80%;
     display: flex;
     align-items: center;
     column-gap: 10px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 .reel .bottom .top span{
     width: 40px;

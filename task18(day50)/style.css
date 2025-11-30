@@ -64,7 +64,7 @@ main{
 .reel .bottom{
     width: 100%;
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     padding: 0 10px;
 }
 .reel .bottom .top{
