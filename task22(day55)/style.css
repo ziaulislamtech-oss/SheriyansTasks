@@ -24,14 +24,16 @@ body>h1{
 .box{
     width: 200px;
     height: 200px;
+    transition: all .2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .box h1{
-    /* mix-blend-mode: difference; */
     color: white;
 }
 .blue{
     background-color: blue;
-    /* anchor-name: --some-anchor; */
 
 }
 .red{
@@ -49,8 +51,6 @@ body>h1{
     bottom: anchor(bottom);
     right: anchor(right);
     pointer-events: none;
-    /* height: 50px;
-    width: 80px; */
     position-anchor: --some-anchor;
     mix-blend-mode: difference;
     transition: all .4s linear;
