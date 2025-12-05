@@ -31,5 +31,5 @@ body{
     }
 }
 .box{
-    animation: animateBox alternate infinite 2s;
+    /* animation: animateBox alternate infinite 2s; */
 }

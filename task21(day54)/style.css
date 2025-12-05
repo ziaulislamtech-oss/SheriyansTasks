@@ -11,6 +11,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 @property --bgColor{
     syntax: "<color>";
@@ -44,7 +45,7 @@ body{
     margin: 20px;
     padding: 20px;
     max-width: 300px; 
-    height: 400px;
+    height: 450px;
     background: 
     linear-gradient(to top left, rgb(10, 10, 10),black) padding-box,
     conic-gradient(from var(--rotate),black, black,rgb(231, 9, 183),black) border-box
@@ -52,10 +53,12 @@ body{
     border-radius: 15px;
     animation: borderAnimate infinite 2s ease-in;
     display:flex;
-    justify-content: center ;
+    justify-content: start ;
     align-items: center;
     flex-direction: column;
     transition: all .5s ease-in;
+    text-align: start;
+    /* position: relative; */
 }
 .box img{
     width: 100;
@@ -64,9 +67,21 @@ body{
 }
 .box h2{
     position: absolute;
-    color: rgba(255, 255, 255, 0.514);
-    top: 20px;
+    bottom: 60px;
+    /* color: rgb(209, 39, 243); */
+    color: white;
+    /* mix-blend-mode: difference; */
+    /* bottom: 20px; */
+    /* text-align: start; */
+    left: 30px;
+    /* margin-top: 20px; */
+    /* mix-blend-mode: difference; */
 
+}
+.box p{
+    position: absolute;
+    bottom: 20px;
+    color: white;
 }
 @keyframes bgAnimation{
     from{
@@ -79,4 +94,7 @@ body{
 .box:hover{
     border: 6px solid transparent;
     box-shadow: 0 0 50px  rgb(231, 9, 183);
+}
+.box:hover h2{
+    text-shadow:5px 5px 10px  rgb(231, 9, 183) ;
 }
