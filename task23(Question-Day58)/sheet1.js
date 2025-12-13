@@ -5,7 +5,7 @@
         
         // let user={
 //     Name : 'Zia-Khan',
-//     Email : 'ziaulislam.tech@gmail.com',
+//     Email : 'dummy@gmail.com',
 //     logedIn : function(){
     //        return console.log('user logged In')
     //     }
@@ -134,3 +134,8 @@
 // }
 // let Printed=print.bind(obj)
 // Printed()
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SHEET ONE QUESTIONS SOVLED ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
