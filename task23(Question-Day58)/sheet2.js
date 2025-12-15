@@ -136,10 +136,23 @@
 
 //  ---------------SECTION 7: Apply Method Practice-------------------------
 
-function introduce(city,role){
-    console.log(`your name is ${this.name} your live in ${this.city} you are ${this.role}`)
+// function introduce(city,role){
+//     console.log(`I am ${this.name}, a ${role} from ${city}`)
+// }
+// let obj1 = {
+//     name : 'zia-khan',
+
+// }
+// introduce.apply(obj1,['Batkhela','Webdeveloper'])
+
+//  call method  takes argument one by one while apply method take argument in array form
+
+// ---------------------------------------------
+
+function greats(){
+    console.log(`hello ${this.name}`)
 }
-let obj1 = {
-    name : 'zia-khan',
-    
+let objN={
+    name:'Zia-UI-Islam'
 }
+let greatFnc = greats.bind(objN)
