@@ -107,3 +107,48 @@
 // ----------------------------------------
 
 // -------------Question No: 8--------------
+
+// function toUpperCase(string,cb){
+//     console.log('Uper Case Main horaha hian.....!')
+//     setTimeout(()=>{
+//         cb(string.toUpperCase())
+//     },2000)
+// }
+// toUpperCase('hello zia khan',function(st){
+//     console.log(st)
+// })
+
+
+// ----------------------------------------
+    
+// -------------Question No: 9--------------
+
+// function arraySeEvenNumDo(arr,cb){
+    //     console.log('even numbers arahain hain....')
+    //     setTimeout(()=>{
+        //         cb(arr)
+        //     },1000)
+        // }
+        // arraySeEvenNumDo([1,2,3,4,5,6,7,8,9,10],function(array){
+            //     array.forEach((val)=>{
+//         if(val%2===0) console.log(val)
+//     })
+// })
+
+
+
+// ----------------------------------------
+    
+// -------------Question No: 10--------------
+
+function ageCheckKaro(age,cb){
+    console.log(`age check horaha hain...`)
+    setTimeout(()=>{
+        cb(age)
+    },1000)
+}
+
+ageCheckKaro(22,function(userAge){
+    if(userAge>18) console.log(userAge+' you are allowed')
+    else console.log(userAge+' not allowed')
+})
