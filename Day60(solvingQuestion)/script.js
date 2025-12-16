@@ -16,21 +16,51 @@
 
 //--------------Quesiton NO:2-----
 
-function instagramSeDataLaao(userName,cb){
-    console.log('fetching data...')
+// function instagramSeDataLaao(userName,cb){
+    //     console.log('fetching data...')
+    //     setTimeout(()=>{
+        //         cb({uniquenum:1224,userName:'harsh'})
+//     },3000)
+// }
+// function metaPeJaaoImagesLaao(uniqueNum,cb){
+    //     console.log('fetching  Images...')
+    //     setTimeout(()=>{
+//         cb(['img1','img2'])
+//     },3000)
+// }
+// instagramSeDataLaao('harsh',function(data){
+//     console.log(data)
+//     metaPeJaaoImagesLaao(data.uniqueNum,function(images){
+//         console.log(images)
+//     })
+// })
+
+
+// ------------------------
+
+//  -----------Question NO:2------
+function loginUser(username,cb){
+    console.log('getting user name...')
     setTimeout(()=>{
-        cb({uniquenum:1224,userName:'harsh'})
-    },3000)
+        cb({id:1212,username:'harsh'})
+    },1000)
 }
-function metaPeJaaoImagesLaao(uniqueNum,cb){
-    console.log('fetching  Images...')
+function fetchPermissions(id,cb){
+    console.log('fetching permission');
     setTimeout(()=>{
-        cb(['img1','img2'])
-    },3000)
+        cb(['read','write','delete']);
+    },1000)
 }
-instagramSeDataLaao('harsh',function(data){
-    console.log(data)
-    metaPeJaaoImagesLaao(data.uniqueNum,function(images){
-        console.log(images)
+function loadDashboard(permission,cb){
+    console.log('loading dashboard....')
+    setTimeout(()=>{
+        cb()
+    },1000)
+}
+loginUser('harsh',function(userData){
+    fetchPermissions(userData.id,function(permissions){
+        loadDashboard(permissions,function(){
+            console.log('dashboarded Loaded')
+        })
     })
 })
