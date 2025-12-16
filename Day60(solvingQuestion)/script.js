@@ -13,3 +13,24 @@
 // })
 
 // ------------------------
+
+//--------------Quesiton NO:2-----
+
+function instagramSeDataLaao(userName,cb){
+    console.log('fetching data...')
+    setTimeout(()=>{
+        cb({uniquenum:1224,userName:'harsh'})
+    },3000)
+}
+function metaPeJaaoImagesLaao(uniqueNum,cb){
+    console.log('fetching  Images...')
+    setTimeout(()=>{
+        cb(['img1','img2'])
+    },3000)
+}
+instagramSeDataLaao('harsh',function(data){
+    console.log(data)
+    metaPeJaaoImagesLaao(data.uniqueNum,function(images){
+        console.log(images)
+    })
+})
