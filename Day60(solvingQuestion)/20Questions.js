@@ -92,16 +92,16 @@
 
 // -------------Question No: 7--------------
 
-function evenYaOddBatao(number,cb){
-    console.log(`number check horaha hian....!`)
-    setTimeout(()=>{
-        cb(number)
-    },1000)
-}
-evenYaOddBatao(9,function(num){
-    if(num%2===0) console.log(`even`)
-        else return console.log('odd')
-})
+// function evenYaOddBatao(number,cb){
+//     console.log(`number check horaha hian....!`)
+//     setTimeout(()=>{
+//         cb(number)
+//     },1000)
+// }
+// evenYaOddBatao(9,function(num){
+//     if(num%2===0) console.log(`even`)
+//         else return console.log('odd')
+// })
 
 
 // ----------------------------------------
