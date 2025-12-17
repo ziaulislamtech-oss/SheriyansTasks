@@ -92,15 +92,18 @@
 
 // -------------Question No: 7--------------
 
-// function evenYaOddBatao(number,cb){
-//     console.log(`number check horaha hian....!`)
-//     setTimeout(()=>{
-//         cb(number)
-//     },1000)
+// function oddYaEvenDo(number,cb){
+//     console.log('number check hora ha  hain...')
+//    setTimeout(()=>{
+//      console.log()
+//     if(number%2===0){
+//         cb('Even')
+//     }
+//     else{cb('Odd')}
+//    },2000)
 // }
-// evenYaOddBatao(9,function(num){
-//     if(num%2===0) console.log(`even`)
-//         else return console.log('odd')
+// oddYaEvenDo(5,function(batao){
+//     console.log(batao)
 // })
 
 
@@ -124,15 +127,16 @@
 // -------------Question No: 9--------------
 
 // function arraySeEvenNumDo(arr,cb){
-    //     console.log('even numbers arahain hain....')
-    //     setTimeout(()=>{
-        //         cb(arr)
-        //     },1000)
-        // }
-        // arraySeEvenNumDo([1,2,3,4,5,6,7,8,9,10],function(array){
-            //     array.forEach((val)=>{
-//         if(val%2===0) console.log(val)
-//     })
+//     console.log('Even numbers nekalain jarahain hain....')
+//     setTimeout(()=>{
+//         let evenNums=arr.filter(n => n%2===0)
+//            cb(evenNums)
+        
+//     },2000)
+// }
+
+// arraySeEvenNumDo([1,2,3,4,5,6,7,8,9,10],function(evenNumbers){
+//     console.log(evenNumbers)
 // })
 
 
@@ -141,14 +145,33 @@
     
 // -------------Question No: 10--------------
 
-function ageCheckKaro(age,cb){
-    console.log(`age check horaha hain...`)
-    setTimeout(()=>{
-        cb(age)
-    },1000)
-}
+// function ageCheckKaro(age,cb){
+//     console.log('age check horaha hian...')
+//     setTimeout(()=>{
+//         if(age>18) cb('you are allowed')
+//             else cb('sorry you are young')
+//     },2000)
+// }
+// ageCheckKaro(2,function(data){
+//     console.log(data)
+// })
 
-ageCheckKaro(22,function(userAge){
-    if(userAge>18) console.log(userAge+' you are allowed')
-    else console.log(userAge+' not allowed')
-})
+// -----------------------------------
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~LEVEL THREE~~~~~~~~~~~~~~~~~~~~~~~~~~
+// function getUser(cb){
+//     console.log(`Getting User....`)
+//     setTimeout(()=>{
+//         cb('salman')
+//     },2000)
+// }
+// function getUserProfile(name,cb){
+//     setTimeout(()=>{
+//         cb({name:'zia-khan',id:234,img:'dummypic'})
+//     },2000)
+// }
+// getUser(function(user){
+//      console.log(user)
+    
+
+// })
