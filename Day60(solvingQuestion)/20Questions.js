@@ -159,19 +159,142 @@
 // -----------------------------------
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~LEVEL THREE~~~~~~~~~~~~~~~~~~~~~~~~~~
-// function getUser(cb){
-//     console.log(`Getting User....`)
-//     setTimeout(()=>{
-//         cb('salman')
-//     },2000)
-// }
-// function getUserProfile(name,cb){
-//     setTimeout(()=>{
-//         cb({name:'zia-khan',id:234,img:'dummypic'})
-//     },2000)
-// }
-// getUser(function(user){
-//      console.log(user)
-    
 
+// function getUser(name,cb){
+//     console.log('Fetching Users.....')
+//     setTimeout(()=>{
+//         cb({
+//             user1:name,
+//             user2: 'Maaz khan',
+//             user3 : 'Shouaib khan',
+//             user4 : 'Khalid'
+            
+//         })
+//     },2000)
+// }
+// function getProfile(username,cb){
+//     console.log(`fetching ${username} profile...`)
+//     setTimeout(()=>{
+//         cb({
+//             name : username,
+//             age : 22,
+//             gender:'Male',
+
+//         })
+//     },2000)
+// }
+// function getPosts(name,cb){
+//     console.log(`Fetching ${name} posts....`)
+//     setTimeout(()=>{
+//         cb({
+//             ProfileHolder:name,
+//             post1: 'Fealing Happy',
+//             post2:'Going to mardan',
+//             post3:'Going to Lahore'
+//         })
+//     },2000)
+// }
+// function getComents(postNo,cb){
+//     console.log(`Fetching  posts ${postNo} coments...`)
+//     setTimeout(()=>{
+//         cb({
+//             post:postNo,
+//             coment1:'wah wah great',
+//             coment2:'have a nice journey',
+//             coment2:'stay bless brother'
+//         })
+//     },2000)
+// }
+// function getLikes(postNo,cb){
+//     console.log(`fetching post ${postNo} likes....`)
+//     setTimeout(()=>{
+//         cb({
+//             post:postNo,
+//             like1:'thumbLike',
+//             like2:'heartLike',
+//             like3:'sadEmoji',
+//             like4:'laughing emoji',
+//             like5:'crying emoji'
+//         })
+//     },2000)
+// }
+
+// getUser('Zia Ul Islam',function(user){
+//     console.log(user)
+//     getProfile(user.user1,function(profileD){
+//         console.log(profileD)
+//         getPosts(profileD.name,function(allPosts){
+//             console.log(allPosts)
+//             getComents(allPosts.post1,function(allComents){
+//                 console.log(allComents)
+//                 getLikes(allPosts.post2,function(allLikes){
+//                     console.log(allLikes)
+//                 })
+//             })
+//         })
+//     })
 // })
+
+
+// -------------------------------------------------
+
+// ----------Question No:12---------------------
+
+function getUserLogins(userName,cb){
+    console.log(`fetching user logins....`)
+    setTimeout(()=>{
+        cb({id:243,token:'2B54C'})
+    },1000)
+}
+
+function getProfile(id,cb){
+    console.log('fetching profile...')
+    setTimeout(()=>{
+        cb({name:'ziakhan',age:22})
+    },1000)
+}
+function getPosts(profileName,cb){
+    console.log(`fetching posts....`)
+    setTimeout(()=>{
+        cb(['Happy Day','Fealing Awesome','Going to Murree'])
+    },2000)
+}
+function getComments(post,cb){
+    console.log(`fetching comments...`);
+    setTimeout(()=>{
+        cb(['very well','stay bless brother','nice day'])
+    },2000)
+}
+function getLikes(post,cb){
+    console.log(`getting likes....`)
+    setTimeout(()=>{
+        cb([1,2,3,4,5,'2k'])
+    },2000)
+}
+function logOutKaro(cb){
+    console.log('logging out....')
+    setTimeout(()=>{
+        cb(`you have been logged out successfully`)
+    },2000)
+
+}
+
+getUserLogins('ziakhan',function(logins){
+    console.log(logins)
+    getProfile(logins.id,function(profile){
+        console.log(profile)
+        getPosts(profile.name,function(posts){
+            console.log(posts)
+            getComments(posts[0],function(coments){
+                console.log(coments)
+                getLikes(posts[0],function(likes){
+                    console.log(likes)
+                    logOutKaro(function(msg){
+                        console.log(msg)
+                    })
+                })
+            })
+        })
+    })
+    
+})
