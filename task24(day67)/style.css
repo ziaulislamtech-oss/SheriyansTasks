@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#navBar{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+#navBar img{
+    width: 50px;
+    display: inline-block; 
+}
+#navBar #leftDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#navBar #leftDiv .para{
+    display: inline-block;
+    margin-left: 16px;
+}
+#navBar #leftDiv .para:hover{
+    cursor: pointer;
+}
+
+#navBar button{
+    border: none;
+    border-bottom: 1px solid rgb(29, 29, 29);
+    font-size: 1rem;
+}
+#navBar button{
+    cursor: pointer;
+}
+.mainDiv{
+    width: 100%;
+    display: flex;
+    position: relative;
+    padding: 50px;
+}
+.mainLeftDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50px;
+
+}
+.mainLeftDiv .leftUpperDiv{
+    display: flex;
+    justify-content:space-around;
+    height: 100%;
+    width: 100%;
+   
+}
+.mainDiv .middleDiv{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+.middleDiv p{
+    color: green;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 20px;
+    color: rgb(71, 71, 71);
+    left: 15px;
+}
+.div200,.div50{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+
+}
+.p200Text,.p50Text{
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+#hello{
+    font-size: 14rem;
+    font-weight: 200;
+    padding: 0px;
+    margin: 0px;
+}
+.p200,.p50{
+    font-size:3rem;
+}
+.mainRightDiv{
+display: flex;
+
+}
+.mainDiv .mainRightDiv img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:top -20px;
+}
+.bottomDiv{
+    
+    border-bottom: 1px solid;
+    width: max-content;
+}
+.bottomDiv:hover{
+    cursor: pointer;
+}

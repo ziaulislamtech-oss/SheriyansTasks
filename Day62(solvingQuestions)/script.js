@@ -53,10 +53,17 @@ function sendEmail(email){
     })
 }
 
-sendEmail('harsh@gmail.com')
-.then(function(data){
-    console.log(data)
-})
-.catch(function(error){
-    console.log(error)
-})
+async function sendEmails(userList){
+   let allresponses = userList.map(function(email){
+        return sendEmail(email)
+        .then(function(data){
+            console.log(data)
+        })
+        .catch(function(error){
+            console.log(error)
+        })
+    })
+    let ans = await Promise.all(allresponses)
+    console.log(ans)
+}
+sendEmails(users)

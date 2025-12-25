@@ -1,0 +1,75 @@
+:root{
+    --pri:#F8F4E1;
+    --sec:#381c0a;
+    --tri1:#feba17;
+    --tri2:#74512d;
+
+}
+@font-face {
+    font-family: Aonic;
+    src: url('./aonic-font/Aonic-Medium.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: var(--sec);
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: var(--tri2);
+}
+section.allElems{
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+.elem{
+    background-color: var(--tri1);
+    height: 400px;
+    width: 330px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: all ease 0.2s;
+    color: var(--pri);
+}
+.elem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.elem h2{
+    position: absolute;
+    bottom: 4%;
+    font-weight: 500;
+    font-size: 33px;
+    right: 5%;
+}
+.elem:active{
+    scale: .97;
+}
+.fullElem{
+    height: 100%;
+    width: 100%;
+    background-color:var(--sec);
+    padding: 40px;
+    font-size: 60px;
+    display: none;
+}
