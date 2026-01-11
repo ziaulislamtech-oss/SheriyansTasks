@@ -1,0 +1,117 @@
+.services {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 80px;
+  background: #ffffff;
+}
+
+/* LEFT SIDE */
+.services-left {
+  max-width: 420px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.services-left h2 {
+  font-size: 26px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.primary-btn {
+  padding: 12px 22px;
+  border-radius: 30px;
+  background: #0b1b2b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* RIGHT SIDE */
+.services-right {
+  display: flex;
+  gap: 30px;
+}
+
+/* COMMON CARD */
+.service-card {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  color: white;
+}
+
+.service-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* LARGE CARD */
+.service-card.large {
+  width: 320px;
+  height: 420px;
+}
+
+/* SMALL CARD */
+.service-card.small {
+  width: 260px;
+  height: 300px;
+}
+
+/* CARD CONTENT */
+.card-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.service-card p {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  font-size: 18px;
+}
+
+/* ARROW BUTTON */
+.arrow-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+}
+
+/* NAV BUTTONS */
+.nav-buttons {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-buttons button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
