@@ -1,5 +1,6 @@
 .Main{
     width: 100%;
+    /* width: 90%; */
     min-height: 500px;
     /* background-image: url('https://images.unsplash.com/flagged/photo-1576972405668-2d020a01cbfa?q=80&w=874&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
     background-size: cover;
@@ -12,6 +13,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 .Main img{
@@ -49,6 +52,7 @@
     padding: 10px;
     border-radius: 15px;
     font-weight: 100;
+    /*  */
 }
 .Main h1,button,p{
     z-index: 9999;
@@ -56,9 +60,6 @@
 }
 .Main .bottom{
     align-self:flex-end;
-    /* height: 40%; */
-    /* background-color: #fff; */
-    /* margin-top: auto; */
     justify-self:end;
     display: flex;
     justify-content: space-between;

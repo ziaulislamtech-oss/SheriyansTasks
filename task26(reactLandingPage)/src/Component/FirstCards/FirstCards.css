@@ -49,6 +49,15 @@
     flex-direction: column;
     justify-content: space-between;
     /* align-items:; */
+    background-color: #0D1A2D;
+    color: white;
+    font-size: 1.1rem;
+}
+.Cards-container>.top img{
+    width: 50px;
+    height: 50px;
+    color: black;
+    margin-bottom: 15px;
 }
 
 .Cards-container .middle {
@@ -72,4 +81,63 @@
     -webkit-backdrop-filter: blur(6.8px);
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
+.Cards-container>.third{
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F8FC;
+    gap: 20px;
+}
+.Cards-container>.third .top{
+    padding: 0 ;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    
+}
+.Cards-container>.third .top h3{
+    font-size: 3rem;
+    font-weight: 100;
+}
+.Cards-container>.third .top .thirdPara{
+    font-size: 14px;
+    color: gray;
+}
+.Cards-container>.third .bottom{
+    display: flex;
+    /* background: #000; */
+    flex-direction: column;
+}
+/* Update your CSS */
+.Cards-container>.third .bottom .progressBar {
+    margin-bottom: 10px;
+}
 
+.Cards-container>.third .bottom .progressBar p {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.Cards-container>.third .bottom .progressBar .range {
+    display: inline-block;
+    height: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+/* Specific colors for each progress bar */
+.Cards-container>.third .bottom .progressBar .range.first {
+    width: 55%;
+    background-color: #5BB3FF; /* Green for 55% */
+}
+
+.Cards-container>.third .bottom .progressBar .range.second {
+    width: 40%;
+    background-color: #5BB3FF; /* Blue for 40% */
+}
+
+.Cards-container>.third .bottom .progressBar .range.third {
+    width: 35%;
+    background-color: #5BB3FF; /* Red for 35% */
+}
