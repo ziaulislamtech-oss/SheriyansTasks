@@ -1,0 +1,75 @@
+.Cards-Main {
+    display: flex;
+    /* background-color: black; */
+    flex-direction: column;
+    padding: 20px;
+}
+
+.Cards-Main .top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+
+}
+
+.Cards-Main .top .horizon {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    padding: 8px;
+    border-radius: 30px;
+}
+
+.Cards-Main>.top>p {
+    font-size: 1.3rem;
+    width: 50%;
+}
+
+.Cards-container {
+    display: flex;
+    /* flex-direction: column; */
+    /* column-gap: auto; */
+    justify-content: space-around;
+
+}
+
+.Cards-container .Card {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.164);
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.Cards-container>.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items:; */
+}
+
+.Cards-container .middle {
+    background-image: url('https://i.pinimg.com/1200x/2e/6b/f4/2e6bf4d78db461b923413cc441252980.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Cards-container>.middle p {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.473);
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
