@@ -50,8 +50,12 @@
     justify-content: space-between;
     /* align-items:; */
     background-color: #0D1A2D;
+    color: rgba(255, 255, 255, 0.411);
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+.Cards-container>.top p span{
     color: white;
-    font-size: 1.1rem;
 }
 .Cards-container>.top img{
     width: 50px;
